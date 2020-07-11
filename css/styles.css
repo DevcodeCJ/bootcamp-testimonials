@@ -1,0 +1,180 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+   background-image: url(/images/pattern-bg.svg), url(/images/pattern-curve.svg);
+   background-repeat: no-repeat;
+   background-position: top center, bottom left; 
+   background-size: 87.5%, 80%;
+   background-position-y: 5vh, bottom;
+}
+
+.arrow-ctn {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   width: 100px;
+   border-radius: 25px;
+   background-color: white;
+   padding: 20px;
+   margin: -30px auto 0;
+   z-index: 10;
+   box-shadow: 0 5px 50px #4d4d998e;
+}
+
+.arrow {
+   cursor: pointer;
+}
+
+.carousel { 
+   width: 84%;
+   margin: auto;
+}
+
+.carousel-control-prev {
+   margin-left: 15px;
+}
+
+.carousel-control-next {
+   margin-right: 15px;
+}
+
+p {
+   font-weight: 300;
+   font-size: 1.5rem;
+   line-height: 1.75;
+}
+
+.quotes-img {
+   width: 80px;
+   margin-bottom: -40px;
+}
+
+.testimonial {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/************** Testimonials **************/
+
+.testimony {
+   padding: 12vh 0 15vh;
+   text-align: center;
+}
+
+.author-image-wrapper {
+   display: inline-block;
+   width: 80%;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.author-image {
+   position: relative;
+   width: 100%;
+   border-radius: 5px;
+}
+
+.testimony p { 
+   margin-bottom: 30px;
+}
+
+.author {
+   font-size: 1.2rem;
+   color: #c4c4e0;
+   line-height: 1.5;
+   display: flex;
+   flex-direction: column;
+}
+
+.author span {
+   font-weight: bold;
+   color: #000;
+   margin-right: 12px;
+}
+
+.attribution { 
+   font-size: 13px; 
+   text-align: center; 
+   color: hsl(217, 19%, 35%);
+   opacity: 75%;
+   margin-bottom: 0;
+}
+    
+  .attribution a:link, .attribution a:visited { 
+   color: hsl(217, 19%, 35%);
+   text-decoration: underline;
+}
+
+/************** Media Screen >= 1028px **************/
+
+@media screen and (min-width: 1028px) {
+
+   body {
+      height: 100vh;
+      background-image: url(/images/pattern-bg.svg), url(/images/pattern-curve.svg);
+      background-position: 90% center, bottom left;
+      background-size: 85vh, 40%;
+   }
+
+   .arrow-ctn {
+      position: absolute;
+      margin-left: 50px;
+   }
+
+   .author-image-wrapper {
+      position: relative;
+      min-width: 42.5%;
+      margin-bottom: 0;
+      margin-left: -50px;
+   }
+
+   .author {
+      flex-direction: row;
+   }
+
+   .carousel { 
+      width: 77.5%;
+   }
+
+   #carouselSlide {
+      height: 96vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .quotes-img {
+      width: 100px;
+      margin-bottom: -33px;
+      margin-left: 80px;
+   }
+
+   .testimony {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: start;
+      padding: 15vh 0 10vh;
+   }
+
+   .testimonial { 
+      line-height: 1.5;
+      font-size: 1.8rem;
+      align-items: flex-start;
+   }
+
+   .text-wrapper {
+      position: relative;
+   }
+
+}
+
